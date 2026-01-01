@@ -1,0 +1,631 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    font-family: "Inter", sans-serif;
+    color: #222;
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: #272525;
+    font-size: 16px;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 30px;
+
+    margin-left: 79px;
+    padding-right: 222px;
+}
+
+.contact-btn {
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-radius: 25px;
+    background: #272525;
+    color: #fff;
+    font-size: 16px;
+
+}
+.contact{
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    color: #272525;
+    font-size: 16px;
+    
+}
+.C{
+    gap: 10px;
+
+}
+/* PAGE GRID */
+.container {
+        display: grid;
+    grid-template-columns: 1fr 420px; /* левая часть + форма */
+    gap: -30px;
+   margin-left: 75px;
+   margin-right: 75px;
+   margin-top: 171px;
+   margin-bottom: 30px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* TITLE */
+.title {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: -18px;
+}
+
+.meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 51px; /* расстояние между колонками как на макете */
+    margin-top: 15px;
+}
+
+.meta-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-top {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 6px; /* отступ как на скрине */
+}
+.one{
+    color: #525151;
+    font-size: 16px;
+}
+.two{
+    color: #525151;
+    font-size: 16px;
+}
+.meta-bottom {
+    font-size: 30px;
+    color: #9b9b9b;
+    font-weight: 400;
+}
+
+/* IMAGE SLIDER */
+.slider {
+    width: 850px;
+    height: 478px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.slider img {
+    width: 850px;
+    height: 478px;
+    object-fit: cover;
+    display: none;
+
+}
+
+.slider img.active {
+    display: block;
+}
+
+.arrow {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.arrow.left {
+    left: 15px;
+}
+
+.arrow.right {
+    right: 15px;
+}
+
+
+/* ====== ОСНОВА ====== */
+.right-form {
+  width: 410px;
+  height: 800px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111;
+  margin: -75px;
+  margin-bottom: 20px;
+}
+
+/* ====== ЗАГОЛОВОК ====== */
+.rf-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+/* ====== ОПИСАНИЕ ====== */
+.rf-event {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.rf-price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* ====== КНОПКА ОПЛАТЫ ====== */
+.rf-paynow {
+  width: 100%;
+  height: 44px;
+  background: #5aa7ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.rf-paynow:hover {
+  background: #4a97ef;
+}
+
+/* ====== АКЦИИ ====== */
+.rf-offers {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.rf-offers div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.rf-offers span {
+  color: #555;
+}
+
+.rf-offers b {
+  font-weight: 700;
+}
+
+/* ====== ВОЗРАСТ ====== */
+.rf-ages {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.rf-ages label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ====== МЕСТА ====== */
+.rf-places {
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* ====== ФОРМА ====== */
+.rf-form input[type="text"],
+.rf-form input[type="email"],
+.rf-form input[type="number"] {
+  width: 350px;
+  height: 37px;
+  border-radius: 22px;
+  border: 1px solid #e2e2e2;
+  padding: 0 16px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.rf-form input::placeholder {
+  color: #aaa;
+}
+
+.rf-form input:focus {
+  border-color: #5aa7ff;
+}
+
+/* ====== ПОЛ ====== */
+.rf-gender {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+/* "Ваш пол" — СНАРУЖИ */
+.rf-gender span {
+  color: #6f6f6f;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* поле с вариантами */
+.rf-gender label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #9a9a9a;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 257px;
+  height: 38px;
+}
+
+/* контейнер-поле (ОДНО) */
+.rf-gender {
+  position: relative;
+}
+
+/* общее поле */
+.rf-gender::after {
+  content: "";
+  position: absolute;
+  left: 82px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 52px;
+  border: 2px solid #cfcfcf;
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+/* внутренние отступы (по макету) */
+.rf-gender label:first-of-type {
+  margin-left: 28px;
+    margin-bottom: 11px;
+}
+
+.rf-gender label + label {
+  margin-left: 48px;
+  margin-bottom: 11px;
+}
+
+
+/* кастом radio */
+.rf-gender input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #cfcfcf;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+/* активное состояние */
+.rf-gender input[type="radio"]:checked {
+  border-color: #ff3b30;
+}
+
+.rf-gender input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ff3b30;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* активный текст */
+.rf-gender label:has(input:checked) {
+  color: #111;
+}
+
+.rf-info-text {
+    font-size: 16px;
+    color: #9a9a9a;
+    text-align: center;
+    margin-left: 48px;
+    margin-top: 10px;
+    margin-right: 48px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+/* ====== КНОПКА ОТПРАВКИ ====== */
+.rf-submit {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #ff3b30;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.rf-submit:hover {
+  background: #e33228;
+}
+
+/* ====== СОГЛАСИЕ ====== */
+.rf-agree {
+  display: flex;
+  gap: 7px;
+  font-size: 10px;
+  color: #000000;
+
+}
+
+.rf-agree a {
+  color: #ff3b30;
+  text-decoration: none;
+    font-size: 10px;
+}
+
+.rf-agree a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RADIO / CHECKBOX ====== */
+input[type="radio"]{
+      accent-color: #ff3b30;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  accent-color: #ff3b30;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* BLOCKS */
+.block {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    width: 850px;
+    height: 200px;
+    margin-left: 75px;
+}
+
+.block h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* ================= INFO SECTION ================= */
+
+.info-section {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* CARD */
+.info-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    width: 850px;
+    height: 191px;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+/* TITLE */
+.info-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #272525;
+    margin-bottom: 15px;
+    margin-top:-15px ;
+}
+
+/* LIST */
+.info-list {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.info-list li {
+    font-size: 16px;
+
+    color: #272525; /* текст любого цвета */
+}
+
+.info-list li::marker {
+    color: #FF2C33;
+    width: 8px;
+    height: 8px; /* именно кружочки красные */
+}
+
+
+/* TEXT */
+.info-text {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #333;
+    max-width: 720px;
+}
+
+/* MAP */
+.map-box {
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.map-box img {
+    width: 100%;
+    display: block;
+}
+
+/* MAP ACTIONS */
+.map-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.map-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #111;
+    background: #f2f2f2;
+    transition: background .2s ease;
+}
+
+.map-btn:hover {
+    background: #e6e6e6;
+}
+/* ================= HOW IT GOES ================= */
+
+.how {
+    margin-top: 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 36px 40px 40px;
+}
+
+.how-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 28px;
+}
+
+/* GRID */
+.how-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 28px;
+}
+
+/* CARD */
+.how-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 22px 24px 24px;
+    position: relative;
+    background: #fff;
+    width: 372.5px;
+    height: 219px;
+}
+
+/* NUMBER */
+.how-num {
+    font-size: 48px;
+    font-weight: 700;
+    color:#F42D18;
+    margin-bottom: 6px;
+}
+
+/* TITLE */
+.how-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #272525;
+    margin-bottom: 8px;
+    margin-top: -10px;
+}
+
+/* TEXT */
+.how-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #272525;
+}
+
+.how-card-title {
+    position: relative;
+    padding-bottom: 10px;   /* расстояние до линии */
+    margin-bottom: 12px;    /* расстояние до текста */
+}
+
+.how-card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 332.5px;            /* длина линии как на макете */
+    height: 1px;
+    background: #e6e6e6;    /* цвет линии */
+}
